@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://habibi-performance.com/sitemap.xml
