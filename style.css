@@ -682,3 +682,130 @@
     font-size:29px !important;
   }
 }
+
+/* =========================================================
+   HABIBI PERFORMANCE — MOBILE COMPACT FINAL
+   Dira samo mobitel
+   ========================================================= */
+
+@media (max-width: 650px){
+
+  /* ---------- GENERAL ---------- */
+  body{
+    overflow-x:hidden !important;
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    padding:12px 16px !important;
+    min-height:86px !important;
+  }
+
+  header .logo,
+  header .brand{
+    max-width:185px !important;
+  }
+
+  .portalBtn{
+    min-width:132px !important;
+    padding:12px 14px !important;
+    font-size:13px !important;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:auto !important;
+    height:auto !important;
+    display:flex !important;
+    flex-direction:column !important;
+    padding:0 !important;
+  }
+
+  .heroImage{
+    order:1 !important;
+    width:100% !important;
+    margin:0 !important;
+  }
+
+  .heroImage img{
+    width:100% !important;
+    height:auto !important;
+    object-fit:contain !important;
+  }
+
+  /* ---------- REVIEWS ----------
+     Samo prvi review box prikazuj na mobitelu */
+  .secondaryReviewStack{
+    display:none !important;
+  }
+
+  .reviewStack{
+    order:2 !important;
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    width:calc(100% - 28px) !important;
+    margin:12px auto 8px !important;
+  }
+
+  .reviewCard{
+    min-height:0 !important;
+    padding:14px 15px !important;
+  }
+
+  .reviewCard p{
+    font-size:12px !important;
+    line-height:1.45 !important;
+    margin:8px 0 !important;
+  }
+
+  .reviewCard b{
+    font-size:14px !important;
+  }
+
+  .reviewCard small{
+    font-size:10px !important;
+  }
+
+  .reviewCard .stars{
+    font-size:18px !important;
+  }
+
+  .reviewDots{
+    margin-top:6px !important;
+  }
+
+
+  /* ---------- SOCIAL / PARTNER ----------
+     Habibi TikTok + 3 partnera kompaktno */
+  .socialCorner{
+    order:3 !important;
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:8px 12px 14px !important;
+
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:7px !important;
+
+    overflow:visible !important;
+    background:#050505 !important;
+  }
+
+  /* Glavni Habibi TikTok */
+  .habibiMainSocial{
+    grid-column:1 / -1 !important;
+    display:grid !important;
+    grid-template-columns:58px 1fr !important;
+    grid-template-rows:auto auto !important;
+    gap:4px 10px !important;
+    align-items:center !important;
+
+    min-height:
