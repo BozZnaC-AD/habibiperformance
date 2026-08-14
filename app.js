@@ -40,3 +40,15 @@ document.addEventListener("DOMContentLoaded",()=>{
     t=setInterval(()=>show((n+1)%cards.length),5500+stackIndex*500);
   });
 });
+
+document.addEventListener("change", function(e){
+  if(e.target.id === "lang"){
+    const mobile = document.getElementById("mobileLang");
+    if(mobile) mobile.value = e.target.value;
+  }
+
+  if(e.target.id === "mobileLang"){
+    const desktop = document.getElementById("lang");
+    if(desktop) desktop.value = e.target.value;
+  }
+});
