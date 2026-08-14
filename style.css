@@ -361,3 +361,324 @@
   .partnerQrRow,.asmirQrRow{grid-template-columns:28px 1fr!important}
   .partnerQrRow>img,.asmirQrRow .asmirQr{width:28px!important;height:28px!important}
 }
+
+/* =========================================================
+   HABIBI PERFORMANCE — MOBILE FINAL FIX
+   Desktop ostaje nepromijenjen
+   ========================================================= */
+
+@media (max-width: 650px){
+
+  html, body{
+    overflow-x:hidden !important;
+    width:100% !important;
+  }
+
+  /* HEADER */
+  header{
+    min-height:92px !important;
+    height:auto !important;
+    padding:14px 18px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:12px !important;
+  }
+
+  header .logo,
+  header .brand{
+    max-width:190px !important;
+  }
+
+  header nav{
+    display:none !important;
+  }
+
+  .portalBtn{
+    position:static !important;
+    width:auto !important;
+    min-width:145px !important;
+    padding:14px 18px !important;
+    font-size:14px !important;
+    white-space:nowrap !important;
+  }
+
+
+  /* HERO */
+  .hero{
+    display:flex !important;
+    flex-direction:column !important;
+    min-height:auto !important;
+    height:auto !important;
+    padding:0 !important;
+    overflow:visible !important;
+  }
+
+  .heroImage{
+    position:relative !important;
+    order:1 !important;
+    width:100% !important;
+    max-width:100% !important;
+    height:auto !important;
+    margin:0 !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    transform:none !important;
+    overflow:hidden !important;
+  }
+
+  .heroImage img{
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    max-height:none !important;
+    object-fit:contain !important;
+    object-position:center top !important;
+  }
+
+
+  /* HABIBI TIKTOK + PARTNERI
+     Više ne vise preko slike/desno */
+  .socialCorner{
+    position:relative !important;
+    order:3 !important;
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+    width:100% !important;
+    max-width:100% !important;
+    padding:14px !important;
+    margin:0 !important;
+
+    display:grid !important;
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+    gap:10px !important;
+
+    overflow:visible !important;
+    max-height:none !important;
+    background:#050505 !important;
+  }
+
+  /* Glavni Habibi TikTok ide preko cijele širine */
+  .habibiMainSocial{
+    grid-column:1 / -1 !important;
+    display:grid !important;
+    grid-template-columns:72px 1fr !important;
+    align-items:center !important;
+    gap:12px !important;
+    padding:10px !important;
+  }
+
+  .habibiMainSocial > img{
+    width:72px !important;
+    height:72px !important;
+    margin:0 !important;
+  }
+
+  .mainSocialTitle{
+    margin:0 !important;
+  }
+
+  .mainSocialTitle b{
+    font-size:12px !important;
+  }
+
+  .mainSocialTitle small{
+    display:block !important;
+    font-size:8px !important;
+  }
+
+  .habibiMainSocial > strong{
+    grid-column:2 !important;
+    text-align:left !important;
+    font-size:9px !important;
+  }
+
+  .habibiMainSocial > em{
+    display:none !important;
+  }
+
+
+  /* PARTNER CARDS */
+  .socialCard,
+  .partnerLogoCard,
+  .bskPartnerCard,
+  .asmirPartnerCard{
+    width:100% !important;
+    min-width:0 !important;
+    padding:8px !important;
+    margin:0 !important;
+    position:relative !important;
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+    transform:none !important;
+  }
+
+  .partnerLogoCard .partnerLogo,
+  .bskPartnerCard .bskLogo,
+  .asmirPartnerCard .asmirLogo{
+    height:48px !important;
+    width:100% !important;
+    object-fit:contain !important;
+    margin:4px auto 7px !important;
+  }
+
+  .socialHead b{
+    font-size:8px !important;
+  }
+
+  .socialHead span{
+    font-size:7px !important;
+  }
+
+  .partnerQrRow,
+  .asmirQrRow{
+    grid-template-columns:38px 1fr !important;
+    gap:7px !important;
+  }
+
+  .partnerQrRow > img,
+  .asmirQrRow .asmirQr{
+    width:38px !important;
+    height:38px !important;
+  }
+
+  .partnerQrRow strong,
+  .asmirQrRow strong{
+    font-size:7px !important;
+  }
+
+
+  /* RECENZIJE ISPOD HERO SLIKE */
+  .reviewStack,
+  .secondaryReviewStack{
+    position:relative !important;
+    order:2 !important;
+
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    margin:14px auto !important;
+
+    display:block !important;
+    transform:none !important;
+    z-index:5 !important;
+  }
+
+  .reviewCard{
+    width:100% !important;
+    min-height:auto !important;
+    padding:16px !important;
+  }
+
+  .reviewCard p{
+    font-size:13px !important;
+    line-height:1.55 !important;
+  }
+
+  .reviewCard b{
+    font-size:14px !important;
+  }
+
+  .reviewCard small{
+    font-size:11px !important;
+  }
+
+  .reviewDots{
+    margin-top:7px !important;
+  }
+
+
+  /* NASLOV ISPOD HERO */
+  .hero + section,
+  #finder{
+    margin-top:0 !important;
+  }
+
+  #finder{
+    padding-top:38px !important;
+  }
+
+  #finder h1,
+  #finder h2{
+    font-size:34px !important;
+    line-height:1.08 !important;
+    text-align:center !important;
+  }
+
+
+  /* VEHICLE FINDER */
+  .finder,
+  .finderGrid,
+  .vehicleFinder{
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .finderGrid{
+    grid-template-columns:1fr !important;
+  }
+
+  select,
+  .finder select{
+    min-height:74px !important;
+    font-size:18px !important;
+  }
+
+  .findBtn,
+  .finder button{
+    width:100% !important;
+    min-height:74px !important;
+    font-size:18px !important;
+  }
+
+
+  /* WHATSAPP */
+  .whatsappFloat,
+  .whatsapp{
+    position:fixed !important;
+    right:18px !important;
+    bottom:18px !important;
+    z-index:999 !important;
+  }
+
+
+  /* UKLONI NEPOTREBAN OGROMAN CRNI PROSTOR */
+  section{
+    min-height:0 !important;
+  }
+}
+
+
+/* UŽI TELEFONI */
+@media (max-width: 390px){
+
+  header{
+    padding:12px !important;
+  }
+
+  .portalBtn{
+    min-width:125px !important;
+    padding:12px 13px !important;
+    font-size:12px !important;
+  }
+
+  .socialCorner{
+    grid-template-columns:1fr 1fr !important;
+    padding:10px !important;
+    gap:7px !important;
+  }
+
+  #finder h1,
+  #finder h2{
+    font-size:29px !important;
+  }
+}
