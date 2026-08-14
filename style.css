@@ -809,3 +809,173 @@
     align-items:center !important;
 
     min-height:
+
+      /* =========================================================
+   HABIBI PERFORMANCE — MOBILE FINAL V3
+   Samo mobilna verzija
+   ========================================================= */
+
+@media (max-width:650px){
+
+  /* ================= HEADER ================= */
+
+  header{
+    display:grid !important;
+    grid-template-columns:1fr auto auto !important;
+    grid-template-areas:"brand language portal" !important;
+    align-items:center !important;
+    gap:7px !important;
+
+    padding:12px 14px !important;
+    min-height:74px !important;
+    height:auto !important;
+  }
+
+  header .brand{
+    grid-area:brand !important;
+    display:flex !important;
+    width:auto !important;
+    max-width:150px !important;
+    margin:0 !important;
+  }
+
+  header .brand small{
+    font-size:8px !important;
+  }
+
+  header nav{
+    display:none !important;
+  }
+
+  .navRight{
+    display:contents !important;
+  }
+
+
+  /* ================= LANGUAGE ================= */
+
+  #lang{
+    grid-area:language !important;
+
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    width:52px !important;
+    min-width:52px !important;
+    height:38px !important;
+
+    padding:0 5px !important;
+    margin:0 !important;
+
+    background:#0c0d0f !important;
+    color:#fff !important;
+
+    border:1px solid #d99b26 !important;
+    border-radius:6px !important;
+
+    font-size:11px !important;
+    font-weight:800 !important;
+  }
+
+
+  /* ================= FILE PORTAL ================= */
+
+  .navRight a,
+  .portalBtn{
+    grid-area:portal !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:auto !important;
+    min-width:104px !important;
+    height:42px !important;
+
+    padding:0 10px !important;
+    margin:0 !important;
+
+    font-size:11px !important;
+    font-weight:800 !important;
+
+    white-space:nowrap !important;
+  }
+
+
+  /* ================= REVIEW ================= */
+
+  .secondaryReviewStack{
+    display:none !important;
+  }
+
+  .reviewStack{
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+
+    width:calc(100% - 28px) !important;
+    margin:12px auto 7px !important;
+  }
+
+  .reviewCard{
+    min-height:0 !important;
+    padding:13px 14px !important;
+  }
+
+  .reviewCard .stars{
+    font-size:16px !important;
+    margin-bottom:5px !important;
+  }
+
+  .reviewCard p{
+    font-size:12px !important;
+    line-height:1.35 !important;
+    margin:6px 0 !important;
+  }
+
+  .reviewCard b{
+    font-size:13px !important;
+  }
+
+  .reviewCard small{
+    font-size:9px !important;
+  }
+
+  .reviewDots{
+    margin:4px 0 !important;
+    transform:scale(.75) !important;
+  }
+
+
+  /* ================= SOCIAL AREA ================= */
+
+  .socialCorner{
+    position:relative !important;
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+
+    width:100% !important;
+    max-width:none !important;
+
+    margin:0 !important;
+    padding:5px 12px 10px !important;
+
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:6px !important;
+
+    overflow:visible !important;
+    background:#050505 !important;
+  }
+
+
+  /* ================= HABIBI TIKTOK ================= */
+
+  .habibiMainSocial{
+    grid-column:1 / -1 !important;
+
+    display:grid !important;
+    grid
