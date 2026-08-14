@@ -979,3 +979,403 @@
 
     display:grid !important;
     grid
+
+    /* =========================================================
+   HABIBI PERFORMANCE — MOBILE FINAL OVERRIDE
+   Jezik + WhatsApp + kompaktniji partneri
+   ========================================================= */
+
+@media (max-width:650px){
+
+  /* ---------- HEADER ---------- */
+
+  header{
+    display:grid !important;
+    grid-template-columns:minmax(125px,1fr) 58px auto !important;
+    align-items:center !important;
+    gap:7px !important;
+
+    height:auto !important;
+    min-height:78px !important;
+    padding:11px 12px !important;
+  }
+
+  header .brand{
+    display:flex !important;
+    min-width:0 !important;
+    width:auto !important;
+    max-width:175px !important;
+    margin:0 !important;
+  }
+
+  header .brand div{
+    font-size:19px !important;
+  }
+
+  header .brand > span{
+    font-size:28px !important;
+  }
+
+  header .brand small{
+    font-size:7px !important;
+    letter-spacing:2px !important;
+  }
+
+  header nav{
+    display:none !important;
+  }
+
+  .navRight{
+    display:contents !important;
+  }
+
+
+  /* ---------- JEZIK ----------
+     OVERRIDE starog .navRight select{display:none}
+  */
+
+  .navRight #lang,
+  header .navRight #lang,
+  #lang{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    position:static !important;
+
+    width:58px !important;
+    min-width:58px !important;
+    max-width:58px !important;
+
+    height:42px !important;
+    min-height:42px !important;
+
+    margin:0 !important;
+    padding:0 5px !important;
+
+    background:#0a0b0d !important;
+    color:#fff !important;
+
+    border:1px solid #c9922d !important;
+    border-radius:6px !important;
+
+    font-size:11px !important;
+    font-weight:900 !important;
+
+    appearance:auto !important;
+    -webkit-appearance:auto !important;
+  }
+
+
+  /* ---------- FILE PORTAL ---------- */
+
+  .navRight .portal,
+  header .portal{
+    display:flex !important;
+    visibility:visible !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:auto !important;
+    min-width:105px !important;
+    height:42px !important;
+
+    margin:0 !important;
+    padding:0 10px !important;
+
+    font-size:10px !important;
+    white-space:nowrap !important;
+  }
+
+
+  /* ---------- RECENZIJE ---------- */
+
+  .secondaryReviewStack{
+    display:none !important;
+  }
+
+  .reviewStack{
+    width:calc(100% - 24px) !important;
+    margin:10px auto 6px !important;
+  }
+
+  .reviewCard{
+    padding:12px !important;
+  }
+
+  .reviewCard .stars{
+    font-size:16px !important;
+  }
+
+  .reviewCard p{
+    font-size:11.5px !important;
+    line-height:1.4 !important;
+    margin:7px 0 !important;
+  }
+
+  .reviewCard b{
+    font-size:13px !important;
+  }
+
+  .reviewCard small{
+    font-size:9px !important;
+  }
+
+
+  /* ---------- HABIBI TIKTOK ---------- */
+
+  .habibiMainSocial{
+    grid-column:1 / -1 !important;
+
+    display:grid !important;
+    grid-template-columns:46px 1fr !important;
+    align-items:center !important;
+
+    padding:6px 8px !important;
+    gap:7px !important;
+
+    min-height:62px !important;
+  }
+
+  .habibiMainSocial > img{
+    width:46px !important;
+    height:46px !important;
+    margin:0 !important;
+  }
+
+  .mainSocialTitle b{
+    font-size:8px !important;
+  }
+
+  .mainSocialTitle small{
+    display:block !important;
+    font-size:6px !important;
+  }
+
+  .habibiMainSocial > strong{
+    font-size:7px !important;
+    text-align:left !important;
+  }
+
+  .habibiMainSocial > em{
+    display:none !important;
+  }
+
+
+  /* ---------- SVA 3 PARTNERA U JEDNOM REDU ---------- */
+
+  .socialCorner{
+    position:relative !important;
+
+    width:100% !important;
+    max-width:none !important;
+
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+
+    gap:5px !important;
+    padding:5px 7px 10px !important;
+
+    overflow:visible !important;
+  }
+
+  .socialCard,
+  .partnerLogoCard,
+  .bskPartnerCard,
+  .asmirPartnerCard{
+    width:100% !important;
+    min-width:0 !important;
+
+    padding:5px !important;
+    margin:0 !important;
+
+    border-radius:7px !important;
+  }
+
+  .socialHead{
+    min-height:27px !important;
+  }
+
+  .socialHead b{
+    font-size:6px !important;
+    line-height:1.05 !important;
+  }
+
+  .socialHead span{
+    font-size:5px !important;
+    line-height:1.05 !important;
+  }
+
+  .partnerLogoCard .partnerLogo,
+  .bskPartnerCard .bskLogo,
+  .asmirPartnerCard .asmirLogo{
+    width:100% !important;
+    height:27px !important;
+
+    object-fit:contain !important;
+
+    margin:2px 0 3px !important;
+  }
+
+  .partnerQrRow,
+  .asmirQrRow{
+    display:flex !important;
+    align-items:center !important;
+
+    gap:3px !important;
+
+    padding-top:3px !important;
+    margin-top:2px !important;
+  }
+
+  .partnerQrRow > img,
+  .asmirQrRow .asmirQr{
+    width:22px !important;
+    height:22px !important;
+
+    flex:0 0 22px !important;
+  }
+
+  .partnerQrRow strong,
+  .asmirQrRow strong{
+    font-size:5px !important;
+  }
+
+  .partnerQrRow small,
+  .asmirQrRow small{
+    display:none !important;
+  }
+
+
+  /* ---------- FINDER ---------- */
+
+  #finder{
+    margin-top:0 !important;
+    padding-top:18px !important;
+  }
+
+  .finder{
+    width:calc(100% - 20px) !important;
+    margin:12px auto !important;
+    padding:11px !important;
+    gap:7px !important;
+  }
+
+  .finder select{
+    height:52px !important;
+    min-height:52px !important;
+
+    padding:0 11px !important;
+
+    font-size:14px !important;
+  }
+
+  .finder label{
+    font-size:9px !important;
+    margin-bottom:3px !important;
+  }
+
+  .finder button{
+    height:52px !important;
+    min-height:52px !important;
+
+    font-size:13px !important;
+  }
+
+
+  /* =====================================================
+     WHATSAPP — PRAVI SELECTOR JE .waFloat
+     ===================================================== */
+
+  .waFloat{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    position:fixed !important;
+
+    right:12px !important;
+    bottom:15px !important;
+
+    width:auto !important;
+    height:42px !important;
+
+    padding:0 13px !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+    gap:6px !important;
+
+    background:#111 !important;
+    border:1px solid #8c6829 !important;
+    border-radius:999px !important;
+
+    color:#fff !important;
+
+    transform:none !important;
+
+    z-index:99999 !important;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.55) !important;
+  }
+
+  .waFloat span{
+    display:block !important;
+
+    color:#52d66a !important;
+    font-size:17px !important;
+    line-height:1 !important;
+  }
+
+  /* vraćamo tekst WhatsApp */
+  .waFloat b{
+    display:block !important;
+
+    color:#fff !important;
+
+    font-size:10px !important;
+    font-weight:800 !important;
+  }
+}
+
+
+/* Mali Samsung/iPhone */
+@media(max-width:390px){
+
+  header{
+    grid-template-columns:minmax(110px,1fr) 50px auto !important;
+    padding:10px 8px !important;
+    gap:4px !important;
+  }
+
+  header .brand{
+    max-width:145px !important;
+  }
+
+  header .brand div{
+    font-size:17px !important;
+  }
+
+  #lang{
+    width:50px !important;
+    min-width:50px !important;
+    max-width:50px !important;
+  }
+
+  .navRight .portal{
+    min-width:90px !important;
+    padding:0 7px !important;
+    font-size:9px !important;
+  }
+
+  .socialCorner{
+    gap:3px !important;
+    padding-left:5px !important;
+    padding-right:5px !important;
+  }
+}
