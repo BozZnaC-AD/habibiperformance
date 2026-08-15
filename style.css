@@ -1977,3 +1977,28 @@
     font-size:26px !important;
   }
 }
+
+/* HABIBI PERFORMANCE - MOBILE QR FIX */
+@media (max-width:650px){
+
+  /* TikTok / Habibi QR kartica */
+  .partnerQrRow{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:12px !important;
+  }
+
+  .partnerQrRow > img{
+    width:92px !important;
+    height:92px !important;
+    flex:0 0 92px !important;
+    object-fit:contain !important;
+    margin-left:auto !important;
+  }
+
+  .partnerQrRow > div{
+    min-width:0 !important;
+    flex:1 1 auto !important;
+  }
+}

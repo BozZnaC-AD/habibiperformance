@@ -790,7 +790,7 @@ async function init() {
   }
 
 
-  renderPopular(); setLang('EN')
+  renderPopular(); 
 }
 
 
