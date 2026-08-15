@@ -1,981 +1,195 @@
-:root{--gold:#f2ad20;--gold2:#ffd16b;--bg:#050505;--panel:#0b0c0e;--line:#4b3814;--muted:#93979e;--green:#8ee39a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Inter,Arial,sans-serif}header{height:76px;background:#040404;display:flex;align-items:center;gap:28px;padding:0 2.5%;border-bottom:1px solid #2b210e;position:sticky;top:0;z-index:30}.brand{display:flex;align-items:center;gap:9px;min-width:230px;color:var(--gold)}.brand>span{font-size:34px}.brand div{font-size:23px;font-weight:900}.brand small{display:block;font-size:9px;letter-spacing:3px}nav{flex:1;text-align:center}nav a{color:#eee;text-decoration:none;margin:0 13px;font-size:11px;font-weight:800}.navRight{display:flex;align-items:center;gap:9px}.navRight select{background:#080808;color:#fff;border:1px solid #342b1b;padding:10px}.portal{background:linear-gradient(#f5cc69,#bd7f23);color:#111;text-decoration:none;padding:11px 15px;border-radius:5px;font-size:11px;font-weight:900}.hero{min-height:500px;position:relative;overflow:hidden;background:#070707}.heroImage{position:absolute;inset:0;background:url('/hero-premium.jpg') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.08) 68%,#050505 100%)}.review{position:absolute;left:1.5%;top:15%;z-index:4;width:210px;background:#060708eF;border:1px solid #654914;border-radius:9px;padding:18px}.stars{color:var(--gold);font-size:18px;letter-spacing:2px}.review p{font-size:12px;line-height:1.6}.review small{display:block;color:#aaa;margin:4px 0}.review em{display:block;color:var(--gold);font-size:9px;font-style:normal;margin-top:12px}.rightRail{position:absolute;right:1.5%;top:15px;z-index:4;width:180px;display:grid;gap:10px}.tiktok,.partners{background:#060708ed;border:1px solid #654914;border-radius:9px;padding:12px;text-align:center;color:#fff;text-decoration:none}.tiktok>b{font-size:17px}.tiktok img{display:block;width:115px;height:115px;margin:8px auto;background:#fff;padding:4px;border-radius:5px}.tiktok small{display:block}.tiktok span{display:block;background:linear-gradient(#f5cc69,#bd7f23);color:#111;font-size:9px;font-weight:900;padding:8px;margin-top:8px;border-radius:4px}.partners>b{font-size:10px;color:var(--gold)}.partners div{font-size:30px;color:var(--gold);padding:10px}.partners small{font-size:9px;color:#777}.finderSection{max-width:1500px;margin:auto;padding:26px 2%}.headline{text-align:center}.headline h1{font-size:36px;margin:0}.headline h1 span,.section h2 span{color:var(--gold)}.headline p{color:#bbb}.finder{display:grid;grid-template-columns:1fr 1fr 1fr 1fr .9fr;gap:10px;background:#0a0b0d;border:1px solid #4e3a15;border-radius:9px;padding:15px;margin-top:18px}.finder label{display:block;font-size:9px;font-weight:900;color:#d9b56a;margin-bottom:6px}.finder select{width:100%;background:#0e1012;color:#ddd;border:1px solid #5b4315;padding:12px;border-radius:5px}.finder button{align-self:end;height:42px;background:linear-gradient(#f3c75e,#c58221);border:0;border-radius:5px;font-weight:900}.quick{position:relative;margin-top:9px}.quick input{width:100%;background:#0a0b0d;border:1px solid #292b2e;color:#fff;padding:13px;border-radius:5px}#suggestions{position:absolute;background:#0a0b0d;width:100%;z-index:20}.suggestion{padding:10px;border-bottom:1px solid #25272a;cursor:pointer}.suggestion:hover{background:#161718}.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#30230d;border-block:1px solid #30230d}.trust>div{background:#070809;padding:17px 4%;color:var(--gold)}.trust b{margin-left:7px;font-size:10px}.trust small{display:block;color:#8c8c8c;margin:4px 0 0 27px;font-size:9px}.facts{display:grid;grid-template-columns:repeat(4,1fr);max-width:1500px;margin:12px auto 0;border:1px solid #463615;border-radius:8px;overflow:hidden}.facts div{text-align:center;padding:18px;background:#0a0b0d;border-right:1px solid #302719}.facts b{display:block;color:var(--gold);font-size:27px}.facts small{font-size:9px;color:#ddd}.section{max-width:1400px;margin:auto;padding:65px 4%}.sectionTitle{display:flex;justify-content:space-between;margin-bottom:22px}.sectionTitle small{color:var(--gold);letter-spacing:2px;font-size:10px;font-weight:900}.section h2{font-size:38px;margin:6px 0}.sectionTitle p{color:#888}.dynoPanel{display:grid;grid-template-columns:.85fr 1.4fr;background:#090a0b;border:1px solid #4d3914;border-radius:10px;overflow:hidden}.dynoData{padding:24px;border-right:1px solid #302719}.vehicleName{font-size:13px;font-weight:900;color:#e2e2e2;margin-bottom:20px}.dynoTable{display:grid;grid-template-columns:1.2fr .7fr .7fr .7fr;gap:0;border:1px solid #292929}.dynoTable>*{padding:12px 9px;border-bottom:1px solid #252525;font-size:10px}.dynoTable b{color:#d0a951}.dynoTable strong{color:#ddd}.dynoTable .hot,.dynoTable .gain{color:var(--gold);font-weight:900}.dynoKpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.dynoKpis div{background:#0d0e10;border:1px solid #292929;padding:12px;text-align:center}.dynoKpis small{color:#777}.dynoKpis b{display:block;color:var(--gold);font-size:22px}.chartWrap{padding:20px}.chart{width:100%;height:auto}.gridlines line{stroke:#282828;stroke-width:1}.chart path{fill:none;stroke-width:4}.serie{stroke:#41a9ff}.stage1{stroke:#f6b20d}.stage2{stroke:#ff3b30}.torque1{stroke:#47b5ff;stroke-dasharray:8 6}.torque2{stroke:#e4ae20;stroke-dasharray:8 6}.chart text{fill:#888;font-size:14px}.legend{display:flex;gap:15px;justify-content:center;font-size:9px}.legend span:before{content:"";display:inline-block;width:18px;height:2px;margin-right:5px;vertical-align:middle}.l1:before{background:#41a9ff}.l2:before{background:#f6b20d}.l3:before{background:#ff3b30}.l4:before{background:#e4ae20}.services,.popularGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.services article,.pop{background:linear-gradient(#0d0e10,#090a0b);border:1px solid #3b301d;border-radius:8px;padding:20px}.services article>b{color:var(--gold);font-size:25px}.services p,.pop p,.faq p{color:#898d93;line-height:1.6}.pop small{color:var(--gold)}.pop{cursor:pointer}.pop:hover{border-color:var(--gold)}.faq{max-width:900px}.faq details{background:#0a0b0d;border:1px solid #302719;border-radius:6px;padding:15px 17px;margin:8px 0}.faq summary{font-weight:900}.cta{display:flex;justify-content:center;align-items:center;gap:50px;padding:55px 5%;border-top:1px solid #2b210e;background:#070708}.cta small{color:var(--gold)}.cta h2{margin:5px 0}.cta p{color:#888}.cta a{background:linear-gradient(#f5cc69,#bd7f23);color:#111;text-decoration:none;padding:14px 20px;border-radius:5px;font-weight:900}.tune{margin:15px 0;background:#090a0b;border:1px solid var(--gold);border-radius:9px;overflow:hidden}.tuneHead{padding:17px}.tuneHead small{color:#aaa}.tuneHead h3{margin:5px 0}.dataBadge{display:inline-block;margin-left:7px;padding:3px 6px;border-radius:10px;font-size:8px}.dataBadge.verified{background:#173020;color:#90e79c}.dataBadge.estimate{background:#2c2412;color:var(--gold)}.power{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2e240f}.power div{background:#090a0b;padding:18px;text-align:center}.power small{color:#777;display:block}.power strong{display:block;font-size:29px}.power .hot strong{color:var(--gold)}.gains{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px}.gain{background:#0c100d;border:1px solid #213724;color:var(--green);padding:11px;text-align:center;font-weight:900}.actions{text-align:center;padding:0 15px 18px}.actions a{background:linear-gradient(#f5cc69,#bd7f23);color:#111;text-decoration:none;padding:10px 16px;border-radius:4px;font-weight:900}.actions small{display:block;color:#777;font-size:8px;margin-top:8px}footer{text-align:center;color:#666;padding:25px;border-top:1px solid #241b0d}
-@media(max-width:1000px){nav{display:none}.finder{grid-template-columns:1fr 1fr}.finder button{grid-column:1/-1}.dynoPanel{grid-template-columns:1fr}.dynoData{border-right:0;border-bottom:1px solid #302719}.services,.popularGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:650px){header{padding:0 12px}.brand{min-width:0}.navRight select{display:none}.hero{min-height:590px}.review{display:none}.rightRail{width:125px;right:10px}.tiktok img{width:82px;height:82px}.partners{display:none}.finder,.trust,.facts,.services,.popularGrid,.power,.gains{grid-template-columns:1fr}.finderSection,.section{padding:38px 14px}.headline h1{font-size:29px}.dynoTable{grid-template-columns:1.1fr .8fr .8fr .8fr}.cta{display:block;text-align:center}.cta a{display:inline-block;margin-top:15px}}
+/* ==========================================
+   HABIBI PERFORMANCE
+   BLACK / GOLD PREMIUM DESIGN
+========================================== */
 
-/* FINAL CLEAN HERO — one QR only */
-.cleanRail{top:auto;bottom:28px;width:190px}
-.cleanRail .partners{background:rgba(5,6,7,.82);backdrop-filter:blur(8px);padding:10px 12px}
-.partnerSlots{display:flex!important;gap:6px!important;padding:8px 0!important}
-.partnerSlots span{flex:1;height:34px;border:1px dashed rgba(242,173,32,.35);border-radius:4px;display:grid;place-items:center;font-size:7px;color:#7d735e}
-@media(max-width:650px){.cleanRail{display:none}}
-
-/* PREVIEW V2: original Habibi artwork, visually zoomed out */
-.hero{min-height:610px;background:#050505}
-.heroImage{
-  inset:0;
-  background-image:url('/hero-original-clean.jpg')!important;
-  background-repeat:no-repeat!important;
-  background-position:center center!important;
-  background-size:contain!important;
-  transform:scale(.88);
-  transform-origin:center center;
-}
-.hero:before{
-  content:"";position:absolute;inset:0;
-  background:radial-gradient(circle at center,#181006 0,#090806 48%,#050505 78%);
-}
-.hero:after{background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.02) 72%,#050505 100%)}
-@media(max-width:650px){
- .hero{min-height:520px}
- .heroImage{transform:scale(.94);background-size:contain!important}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* PREVIEW V2 — SAME DESIGN, ONLY HERO IMAGE LARGER */
-.heroImage{
-  transform:scale(.97) !important;
-  transform-origin:center center !important;
-}
-@media(max-width:650px){
-  .heroImage{
-    transform:scale(1.02) !important;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-/* FINAL HERO TUNING: same Preview V2 image, only slightly larger + real QR overlay */
-.hero{
-  position:relative;
-  overflow:hidden;
-}
-.heroImage{
-  transform:scale(1.01) !important;
-  transform-origin:center center !important;
-}
-.heroQrOverlay{
-  position:absolute;
-  z-index:12;
-  left:50%;
-  top:31.7%;
-  transform:translate(-50%,-50%);
-  width:112px;
-  height:112px;
-  padding:4px;
-  background:#fff;
-  border:2px solid #d9a42d;
-  border-radius:3px;
-  box-shadow:0 6px 20px rgba(0,0,0,.45);
-}
-.heroQrOverlay img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-}
-@media(max-width:1000px){
-  .heroQrOverlay{
-    width:96px;
-    height:96px;
-    top:31.5%;
-  }
-}
-@media(max-width:650px){
-  .heroImage{
-    transform:scale(1.03) !important;
-  }
-  .heroQrOverlay{
-    width:78px;
-    height:78px;
-    top:30.5%;
-  }
+body {
+  background: #050505;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* PROFESSIONAL UPGRADE DEMO */
-.customerResults{padding-top:35px}
-.resultCards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.resultCards article{background:linear-gradient(145deg,#0d0e10,#070809);border:1px solid #3d301a;border-radius:10px;overflow:hidden;box-shadow:0 16px 45px rgba(0,0,0,.18)}
-.rTop{padding:18px 20px;border-bottom:1px solid #272117;position:relative}.rTop span{display:block;color:#dba93e;font-size:9px;font-weight:900;letter-spacing:2px}.rTop b{display:block;font-size:18px;margin-top:4px}.rTop small{position:absolute;right:18px;top:18px;border:1px solid #70551e;color:#e8b846;padding:5px 8px;border-radius:20px;font-size:8px}
-.rPower{display:grid;grid-template-columns:1fr 30px 1fr;align-items:center;padding:18px}.rPower>div{text-align:center}.rPower small{display:block;color:#777;font-size:8px}.rPower b{display:block;font-size:27px;margin:4px}.rPower em{font-style:normal;color:#aaa;font-size:12px}.rPower i{text-align:center;color:#72551d;font-style:normal;font-size:20px}.rPower .after b,.rPower .after em{color:#f2ad20}
-.resultCards p{margin:0;padding:14px 18px;border-top:1px solid #211d16;color:#e5ad31;font-size:11px}.resultCards p strong{display:block;color:#9a9da2;font-weight:400;line-height:1.5;margin-top:7px}
-.waFloat{position:fixed;right:18px;bottom:18px;z-index:40;background:#111;border:1px solid #68501e;color:#fff;text-decoration:none;border-radius:999px;padding:11px 15px;box-shadow:0 10px 35px rgba(0,0,0,.45);display:flex;align-items:center;gap:7px;font-size:11px}.waFloat span{color:#58d36b;font-size:18px}.waFloat:hover{border-color:#f2ad20}
-.tune{box-shadow:0 18px 50px rgba(0,0,0,.28)}.actions a{display:inline-block;min-width:190px}
-@media(max-width:900px){.resultCards{grid-template-columns:1fr}.customerResults{padding-top:20px}}
-@media(max-width:650px){.waFloat b{display:none}.waFloat{width:48px;height:48px;justify-content:center;padding:0}.waFloat span{font-size:22px}}
-
-/* WORKING QR FIX — overlays the decorative QR baked into hero */
-.realQr{
- position:absolute!important; z-index:25!important;
- left:50%!important; top:31.7%!important;
- transform:translate(-50%,-50%)!important;
- width:116px!important; height:116px!important;
- padding:5px!important; background:#fff!important;
- border:2px solid #d6a333!important; border-radius:3px!important;
- box-shadow:0 4px 18px rgba(0,0,0,.55)!important;
-}
-.realQr img{display:block!important;width:100%!important;height:100%!important;image-rendering:auto!important}
-@media(max-width:1000px){.realQr{width:100px!important;height:100px!important}}
-@media(max-width:650px){.realQr{width:76px!important;height:76px!important}}
-
-/* GOLD QR TEST — positioned over the baked QR on the grille, not the windshield */
-.goldQr{
- position:absolute!important;
- z-index:30!important;
- left:50%!important;
- top:42.2%!important;
- transform:translate(-50%,-50%)!important;
- width:91px!important;
- height:91px!important;
- padding:3px!important;
- background:#090806!important;
- border:1px solid #e8a92d!important;
- border-radius:2px!important;
- box-shadow:0 2px 10px rgba(0,0,0,.5)!important;
-}
-.goldQr img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important}
-@media(max-width:1000px){
- .goldQr{top:42.2%!important;width:82px!important;height:82px!important}
-}
-@media(max-width:650px){
- .goldQr{top:41.8%!important;width:68px!important;height:68px!important}
+:root {
+  --gold: #f5b52e;
+  --gold2: #ffd86a;
+  --black: #050505;
+  --card: #0b0b0b;
+  --border: rgba(245, 181, 46, 0.42);
+  --muted: #a9a9a9;
 }
 
-/* QR ALIGNMENT FIX — calibrated from user's screenshot */
-.goldQr{
-  left:50%!important;
-  top:37.0%!important;
-  width:116px!important;
-  height:116px!important;
-  padding:3px!important;
-}
-@media(max-width:1000px){
-  .goldQr{
-    left:50%!important;
-    top:37.0%!important;
-    width:108px!important;
-    height:108px!important;
-  }
-}
-@media(max-width:650px){
-  .goldQr{
-    left:50%!important;
-    top:36.8%!important;
-    width:82px!important;
-    height:82px!important;
-  }
+/* ==========================================
+   HEADER
+========================================== */
+
+header {
+  min-height: 92px;
+  padding: 16px 5%;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 18px;
+
+  background: #050505;
+  border-bottom: 1px solid rgba(245, 181, 46, 0.25);
 }
 
-/* MULTI REVIEW DEMO */
-.reviewStack{height:auto!important;padding:0!important;background:transparent!important;border:0!important;width:225px!important}
-.reviewCard{display:none;background:rgba(6,7,8,.94);border:1px solid #654914;border-radius:9px;padding:18px;min-height:220px;box-shadow:0 12px 35px rgba(0,0,0,.32)}
-.reviewCard.active{display:block;animation:reviewFade .35s ease}
-.reviewCard .stars{margin-bottom:10px}.reviewCard p{font-size:12px;line-height:1.55;margin:0 0 14px}.reviewCard b{display:block;font-size:14px}.reviewCard small{display:block;color:#aaa;margin:4px 0}.reviewCard em{display:block;color:#f2ad20;font-size:9px;font-style:normal;margin-top:12px}
-.reviewDots{display:flex;justify-content:center;gap:7px;margin-top:10px}.reviewDots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#4a4a4a;cursor:pointer}.reviewDots button.on{background:#f2ad20}
-@keyframes reviewFade{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:none}}
-@media(max-width:650px){.reviewStack{display:none!important}}
-
-/* FINAL QR PLACEMENT: TikTok QR only in the upper-right corner */
-.heroQrOverlay,.goldQr,.realQr{display:none!important}
-.tiktokCorner{
- position:absolute;right:22px;top:24px;z-index:35;
- width:142px;padding:10px;text-align:center;text-decoration:none;
- color:#fff;background:rgba(5,6,7,.9);border:1px solid #765617;border-radius:9px;
- box-shadow:0 10px 30px rgba(0,0,0,.35)
-}
-.tiktokCorner strong{display:block;font-size:8px;letter-spacing:1.3px}
-.tiktokCorner b{display:block;color:#f2ad20;font-size:18px;margin:2px 0 8px}
-.tiktokCorner img{display:block;width:112px;height:112px;object-fit:contain;margin:auto;border:1px solid #d7a42b;border-radius:5px}
-.tiktokCorner span{display:block;margin-top:7px;font-size:8px;color:#ddd}
-@media(max-width:900px){.tiktokCorner{width:118px;right:10px;top:12px}.tiktokCorner img{width:90px;height:90px}}
-@media(max-width:650px){.tiktokCorner{width:92px;padding:7px}.tiktokCorner img{width:72px;height:72px}.tiktokCorner strong{display:none}.tiktokCorner b{font-size:12px}.tiktokCorner span{font-size:6px}}
-
-/* SOCIAL + PARTNER STACK */
-.tiktokCorner{display:none!important}
-.socialCorner{
- position:absolute;right:18px;top:18px;z-index:36;
- display:grid;gap:10px;width:160px
-}
-.socialCard{
- display:block;text-decoration:none;color:#fff;
- background:rgba(5,6,7,.92);border:1px solid #765617;border-radius:9px;
- padding:10px;box-shadow:0 10px 30px rgba(0,0,0,.35);
- backdrop-filter:blur(6px)
-}
-.socialCard:hover{border-color:#f2ad20;transform:translateY(-1px)}
-.socialHead b{display:block;color:#f2ad20;font-size:10px;letter-spacing:.8px}
-.socialHead span{display:block;color:#ddd;font-size:8px;margin:2px 0 7px}
-.socialCard img{
- display:block;width:118px;height:118px;object-fit:contain;margin:auto;
- border:1px solid #d7a42b;border-radius:5px;background:#090806
-}
-.instaSocial .socialHead b{color:#f0b641}
-@media(max-width:900px){
- .socialCorner{width:138px;right:10px;top:10px;gap:8px}
- .socialCard img{width:98px;height:98px}
-}
-@media(max-width:650px){
- .socialCorner{width:104px;right:8px;top:8px}
- .socialCard{padding:7px}
- .socialCard img{width:76px;height:76px}
- .socialHead span{font-size:6px}
- .socialHead b{font-size:8px}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
-/* CORRECTED PARTNERS */
-.socialCorner{
-  position:absolute;right:16px;top:16px;z-index:36;
-  display:grid;gap:8px;width:176px;
-  max-height:calc(100% - 32px);overflow:auto;padding-right:2px;
-  scrollbar-width:thin
-}
-.socialCard{
-  display:block;text-decoration:none;color:#fff;background:rgba(5,6,7,.93);
-  border:1px solid #765617;border-radius:9px;padding:9px;
-  box-shadow:0 8px 26px rgba(0,0,0,.35);backdrop-filter:blur(6px)
-}
-.socialCard:hover{border-color:#f2ad20}
-.socialHead b{display:block;color:#f2ad20;font-size:9px;letter-spacing:.7px}
-.socialHead span{display:block;color:#ddd;font-size:8px;margin:2px 0 6px}
-.socialCard>img:not(.partnerLogo){display:block;width:116px;height:116px;object-fit:contain;margin:auto;border:1px solid #d7a42b;border-radius:5px;background:#090806}
-.partnerLogoCard .partnerLogo{
-  display:block;width:100%;height:64px;object-fit:contain;margin:2px auto 7px;
-  border-radius:5px;background:#050505
-}
-.partnerQrRow{
-  display:grid;grid-template-columns:48px 1fr;gap:7px;align-items:center;
-  border-top:1px solid #302713;padding-top:7px
-}
-.partnerQrRow>img{width:48px;height:48px;object-fit:contain;border:1px solid #d7a42b;border-radius:4px}
-.partnerQrRow strong{display:block;color:#f2ad20;font-size:7px}
-.partnerQrRow small{display:block;color:#999;font-size:6px;margin-top:2px}
-@media(max-width:900px){.socialCorner{width:146px}.partnerLogoCard .partnerLogo{height:52px}.partnerQrRow{grid-template-columns:40px 1fr}.partnerQrRow>img{width:40px;height:40px}}
-@media(max-width:650px){.socialCorner{width:104px;right:7px;top:7px}.partnerLogoCard .partnerLogo{height:38px}.partnerQrRow{grid-template-columns:32px 1fr}.partnerQrRow>img{width:32px;height:32px}.partnerQrRow small{display:none}}
-
-/* HABIBI PERFORMANCE TIKTOK = MAIN BRAND ACTION, NOT PARTNER */
-.mainTikTokBtn{
- display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff;
- border:1px solid #5d461c;background:#0b0b0c;border-radius:5px;
- padding:7px 11px;min-height:38px
-}
-.mainTikTokBtn:hover{border-color:#e8ac39;background:#111}
-.mainTikTokBtn .ttIcon{font-size:18px;color:#e8ac39;font-weight:900}
-.mainTikTokBtn b{display:block;font-size:9px;letter-spacing:.7px;color:#e8ac39}
-.mainTikTokBtn small{display:block;font-size:7px;color:#aaa;margin-top:1px}
-@media(max-width:760px){.mainTikTokBtn small{display:none}.mainTikTokBtn{padding:7px 9px}.mainTikTokBtn b{font-size:8px}}
-@media(max-width:520px){.mainTikTokBtn{display:none}}
-
-/* MAIN HABIBI TIKTOK — prominent above all partners */
-.habibiMainSocial{
- display:block;text-decoration:none;color:#fff;
- background:linear-gradient(145deg,rgba(18,14,7,.97),rgba(5,6,7,.96));
- border:2px solid #e0a630;border-radius:10px;padding:11px;
- box-shadow:0 0 0 1px rgba(232,172,57,.15),0 12px 32px rgba(0,0,0,.45)
-}
-.habibiMainSocial:hover{border-color:#ffd36a;transform:translateY(-1px)}
-.mainSocialTitle{display:flex;align-items:center;gap:7px;margin-bottom:8px}
-.mainSocialTitle>span{color:#e8ac39;font-size:17px}
-.mainSocialTitle b{display:block;color:#f1bc4e;font-size:10px;letter-spacing:.7px}
-.mainSocialTitle small{display:block;color:#aaa;font-size:7px;margin-top:1px}
-.habibiMainSocial>img{
- display:block;width:128px;height:128px;object-fit:contain;margin:0 auto 7px;
- border:1px solid #e8ac39;border-radius:5px;background:#090806
-}
-.habibiMainSocial>strong{display:block;text-align:center;color:#fff;font-size:9px}
-.habibiMainSocial>em{display:block;text-align:center;color:#e8ac39;font-size:6px;font-style:normal;margin-top:4px;letter-spacing:.4px}
-@media(max-width:900px){.habibiMainSocial>img{width:104px;height:104px}}
-@media(max-width:650px){.habibiMainSocial{padding:7px}.habibiMainSocial>img{width:76px;height:76px}.mainSocialTitle b{font-size:8px}.mainSocialTitle small,.habibiMainSocial>em{display:none}}
-
-/* SECOND REVIEW WINDOW */
-.secondaryReviewStack{
-  top:54%!important;
-  left:1.5%!important;
-  width:225px!important;
-}
-.secondaryReviewStack .reviewCard{
-  min-height:190px!important;
-  padding:15px!important;
-}
-.secondaryReviewStack .reviewCard p{
-  font-size:11px!important;
-  line-height:1.5!important;
-}
-.secondaryReviewStack .reviewCard b{font-size:13px!important}
-
-/* PARTNER PANEL COMPACTION — all visible in one viewport */
-.socialCorner{
-  width:150px!important;
-  gap:6px!important;
-  top:12px!important;
-  right:12px!important;
-  max-height:none!important;
-  overflow:visible!important;
-}
-.habibiMainSocial,
-.socialCard,
-.partnerLogoCard,
-.bskPartnerCard,
-.asmirPartnerCard{
-  padding:7px!important;
-  border-radius:7px!important;
-}
-.habibiMainSocial>img{
-  width:86px!important;
-  height:86px!important;
-  margin-bottom:4px!important;
-}
-.mainSocialTitle b{font-size:8px!important}
-.mainSocialTitle small{font-size:6px!important}
-.habibiMainSocial>strong{font-size:7px!important}
-.habibiMainSocial>em{font-size:5px!important}
-
-.partnerLogoCard .partnerLogo,
-.bskPartnerCard .bskLogo,
-.asmirPartnerCard .asmirLogo{
-  height:42px!important;
-  margin:2px auto 5px!important;
-  object-fit:contain!important;
-}
-.socialHead b{font-size:7px!important}
-.socialHead span{font-size:6px!important;margin-bottom:4px!important}
-.partnerQrRow,
-.asmirQrRow{
-  grid-template-columns:34px 1fr!important;
-  gap:5px!important;
-  padding-top:5px!important;
-}
-.partnerQrRow>img,
-.asmirQrRow .asmirQr{
-  width:34px!important;
-  height:34px!important;
-}
-.partnerQrRow strong,
-.asmirQrRow strong{font-size:6px!important}
-.partnerQrRow small,
-.asmirQrRow small{font-size:5px!important}
-
-@media(max-width:1100px){
-  .secondaryReviewStack{display:none!important}
-  .socialCorner{width:128px!important}
-  .habibiMainSocial>img{width:72px!important;height:72px!important}
-  .partnerLogoCard .partnerLogo,
-  .bskPartnerCard .bskLogo,
-  .asmirPartnerCard .asmirLogo{height:34px!important}
-  .partnerQrRow,.asmirQrRow{grid-template-columns:28px 1fr!important}
-  .partnerQrRow>img,.asmirQrRow .asmirQr{width:28px!important;height:28px!important}
+.brandMark {
+  color: var(--gold);
+  font-size: 38px;
+  line-height: 1;
 }
 
-/* =========================================================
-   HABIBI PERFORMANCE — MOBILE FINAL FIX
-   Desktop ostaje nepromijenjen
-   ========================================================= */
-
-@media (max-width: 650px){
-
-  html, body{
-    overflow-x:hidden !important;
-    width:100% !important;
-  }
-
-  /* HEADER */
-  header{
-    min-height:92px !important;
-    height:auto !important;
-    padding:14px 18px !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:space-between !important;
-    gap:12px !important;
-  }
-
-  header .logo,
-  header .brand{
-    max-width:190px !important;
-  }
-
-  header nav{
-    display:none !important;
-  }
-
-  .portalBtn{
-    position:static !important;
-    width:auto !important;
-    min-width:145px !important;
-    padding:14px 18px !important;
-    font-size:14px !important;
-    white-space:nowrap !important;
-  }
-
-
-  /* HERO */
-  .hero{
-    display:flex !important;
-    flex-direction:column !important;
-    min-height:auto !important;
-    height:auto !important;
-    padding:0 !important;
-    overflow:visible !important;
-  }
-
-  .heroImage{
-    position:relative !important;
-    order:1 !important;
-    width:100% !important;
-    max-width:100% !important;
-    height:auto !important;
-    margin:0 !important;
-    left:auto !important;
-    right:auto !important;
-    top:auto !important;
-    transform:none !important;
-    overflow:hidden !important;
-  }
-
-  .heroImage img{
-    display:block !important;
-    width:100% !important;
-    height:auto !important;
-    max-height:none !important;
-    object-fit:contain !important;
-    object-position:center top !important;
-  }
-
-
-  /* HABIBI TIKTOK + PARTNERI
-     Više ne vise preko slike/desno */
-  .socialCorner{
-    position:relative !important;
-    order:3 !important;
-    top:auto !important;
-    right:auto !important;
-    left:auto !important;
-    width:100% !important;
-    max-width:100% !important;
-    padding:14px !important;
-    margin:0 !important;
-
-    display:grid !important;
-    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
-    gap:10px !important;
-
-    overflow:visible !important;
-    max-height:none !important;
-    background:#050505 !important;
-  }
-
-  /* Glavni Habibi TikTok ide preko cijele širine */
-  .habibiMainSocial{
-    grid-column:1 / -1 !important;
-    display:grid !important;
-    grid-template-columns:72px 1fr !important;
-    align-items:center !important;
-    gap:12px !important;
-    padding:10px !important;
-  }
-
-  .habibiMainSocial > img{
-    width:72px !important;
-    height:72px !important;
-    margin:0 !important;
-  }
-
-  .mainSocialTitle{
-    margin:0 !important;
-  }
-
-  .mainSocialTitle b{
-    font-size:12px !important;
-  }
-
-  .mainSocialTitle small{
-    display:block !important;
-    font-size:8px !important;
-  }
-
-  .habibiMainSocial > strong{
-    grid-column:2 !important;
-    text-align:left !important;
-    font-size:9px !important;
-  }
-
-  .habibiMainSocial > em{
-    display:none !important;
-  }
-
-
-  /* PARTNER CARDS */
-  .socialCard,
-  .partnerLogoCard,
-  .bskPartnerCard,
-  .asmirPartnerCard{
-    width:100% !important;
-    min-width:0 !important;
-    padding:8px !important;
-    margin:0 !important;
-    position:relative !important;
-    top:auto !important;
-    right:auto !important;
-    left:auto !important;
-    transform:none !important;
-  }
-
-  .partnerLogoCard .partnerLogo,
-  .bskPartnerCard .bskLogo,
-  .asmirPartnerCard .asmirLogo{
-    height:48px !important;
-    width:100% !important;
-    object-fit:contain !important;
-    margin:4px auto 7px !important;
-  }
-
-  .socialHead b{
-    font-size:8px !important;
-  }
-
-  .socialHead span{
-    font-size:7px !important;
-  }
-
-  .partnerQrRow,
-  .asmirQrRow{
-    grid-template-columns:38px 1fr !important;
-    gap:7px !important;
-  }
-
-  .partnerQrRow > img,
-  .asmirQrRow .asmirQr{
-    width:38px !important;
-    height:38px !important;
-  }
-
-  .partnerQrRow strong,
-  .asmirQrRow strong{
-    font-size:7px !important;
-  }
-
-
-  /* RECENZIJE ISPOD HERO SLIKE */
-  .reviewStack,
-  .secondaryReviewStack{
-    position:relative !important;
-    order:2 !important;
-
-    left:auto !important;
-    right:auto !important;
-    top:auto !important;
-    bottom:auto !important;
-
-    width:calc(100% - 28px) !important;
-    max-width:none !important;
-    margin:14px auto !important;
-
-    display:block !important;
-    transform:none !important;
-    z-index:5 !important;
-  }
-
-  .reviewCard{
-    width:100% !important;
-    min-height:auto !important;
-    padding:16px !important;
-  }
-
-  .reviewCard p{
-    font-size:13px !important;
-    line-height:1.55 !important;
-  }
-
-  .reviewCard b{
-    font-size:14px !important;
-  }
-
-  .reviewCard small{
-    font-size:11px !important;
-  }
-
-  .reviewDots{
-    margin-top:7px !important;
-  }
-
-
-  /* NASLOV ISPOD HERO */
-  .hero + section,
-  #finder{
-    margin-top:0 !important;
-  }
-
-  #finder{
-    padding-top:38px !important;
-  }
-
-  #finder h1,
-  #finder h2{
-    font-size:34px !important;
-    line-height:1.08 !important;
-    text-align:center !important;
-  }
-
-
-  /* VEHICLE FINDER */
-  .finder,
-  .finderGrid,
-  .vehicleFinder{
-    width:calc(100% - 28px) !important;
-    max-width:none !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-
-  .finderGrid{
-    grid-template-columns:1fr !important;
-  }
-
-  select,
-  .finder select{
-    min-height:74px !important;
-    font-size:18px !important;
-  }
-
-  .findBtn,
-  .finder button{
-    width:100% !important;
-    min-height:74px !important;
-    font-size:18px !important;
-  }
-
-
-  /* WHATSAPP */
-  .whatsappFloat,
-  .whatsapp{
-    position:fixed !important;
-    right:18px !important;
-    bottom:18px !important;
-    z-index:999 !important;
-  }
-
-
-  /* UKLONI NEPOTREBAN OGROMAN CRNI PROSTOR */
-  section{
-    min-height:0 !important;
-  }
+.brand strong {
+  display: block;
+  color: var(--gold);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1;
 }
 
-
-/* UŽI TELEFONI */
-@media (max-width: 390px){
-
-  header{
-    padding:12px !important;
-  }
-
-  .portalBtn{
-    min-width:125px !important;
-    padding:12px 13px !important;
-    font-size:12px !important;
-  }
-
-  .socialCorner{
-    grid-template-columns:1fr 1fr !important;
-    padding:10px !important;
-    gap:7px !important;
-  }
-
-  #finder h1,
-  #finder h2{
-    font-size:29px !important;
-  }
+.brand small {
+  display: block;
+  margin-top: 8px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 5px;
 }
 
-/* =========================================================
-   HABIBI PERFORMANCE — MOBILE COMPACT FINAL
-   Dira samo mobitel
-   ========================================================= */
-
-@media (max-width: 650px){
-
-  /* ---------- GENERAL ---------- */
-  body{
-    overflow-x:hidden !important;
-  }
-
-  /* ---------- HEADER ---------- */
-  header{
-    padding:12px 16px !important;
-    min-height:86px !important;
-  }
-
-  header .logo,
-  header .brand{
-    max-width:185px !important;
-  }
-
-  .portalBtn{
-    min-width:132px !important;
-    padding:12px 14px !important;
-    font-size:13px !important;
-  }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    min-height:auto !important;
-    height:auto !important;
-    display:flex !important;
-    flex-direction:column !important;
-    padding:0 !important;
-  }
-
-  .heroImage{
-    order:1 !important;
-    width:100% !important;
-    margin:0 !important;
-  }
-
-  .heroImage img{
-    width:100% !important;
-    height:auto !important;
-    object-fit:contain !important;
-  }
-
-  /* ---------- REVIEWS ----------
-     Samo prvi review box prikazuj na mobitelu */
-  .secondaryReviewStack{
-    display:none !important;
-  }
-
-  .reviewStack{
-    order:2 !important;
-    position:relative !important;
-    top:auto !important;
-    left:auto !important;
-    right:auto !important;
-    width:calc(100% - 28px) !important;
-    margin:12px auto 8px !important;
-  }
-
-  .reviewCard{
-    min-height:0 !important;
-    padding:14px 15px !important;
-  }
-
-  .reviewCard p{
-    font-size:12px !important;
-    line-height:1.45 !important;
-    margin:8px 0 !important;
-  }
-
-  .reviewCard b{
-    font-size:14px !important;
-  }
-
-  .reviewCard small{
-    font-size:10px !important;
-  }
-
-  .reviewCard .stars{
-    font-size:18px !important;
-  }
-
-  .reviewDots{
-    margin-top:6px !important;
-  }
-
-
-  /* ---------- SOCIAL / PARTNER ----------
-     Habibi TikTok + 3 partnera kompaktno */
-  .socialCorner{
-    order:3 !important;
-    position:relative !important;
-    top:auto !important;
-    left:auto !important;
-    right:auto !important;
-
-    width:100% !important;
-    max-width:none !important;
-    margin:0 !important;
-    padding:8px 12px 14px !important;
-
-    display:grid !important;
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:7px !important;
-
-    overflow:visible !important;
-    background:#050505 !important;
-  }
-
-  /* Glavni Habibi TikTok */
-  .habibiMainSocial{
-    grid-column:1 / -1 !important;
-    display:grid !important;
-    grid-template-columns:58px 1fr !important;
-    grid-template-rows:auto auto !important;
-    gap:4px 10px !important;
-    align-items:center !important;
-
-    min-height:
-
-      /* =========================================================
-   HABIBI PERFORMANCE — MOBILE FINAL V3
-   Samo mobilna verzija
-   ========================================================= */
-
-@media (max-width:650px){
-
-  /* ================= HEADER ================= */
-
-  header{
-    display:grid !important;
-    grid-template-columns:1fr auto auto !important;
-    grid-template-areas:"brand language portal" !important;
-    align-items:center !important;
-    gap:7px !important;
-
-    padding:12px 14px !important;
-    min-height:74px !important;
-    height:auto !important;
-  }
-
-  header .brand{
-    grid-area:brand !important;
-    display:flex !important;
-    width:auto !important;
-    max-width:150px !important;
-    margin:0 !important;
-  }
-
-  header .brand small{
-    font-size:8px !important;
-  }
-
-  header nav{
-    display:none !important;
-  }
-
-  .navRight{
-    display:contents !important;
-  }
-
-
-  /* ================= LANGUAGE ================= */
-
-  #lang{
-    grid-area:language !important;
-
-    display:block !important;
-    visibility:visible !important;
-    opacity:1 !important;
-
-    width:52px !important;
-    min-width:52px !important;
-    height:38px !important;
-
-    padding:0 5px !important;
-    margin:0 !important;
-
-    background:#0c0d0f !important;
-    color:#fff !important;
-
-    border:1px solid #d99b26 !important;
-    border-radius:6px !important;
-
-    font-size:11px !important;
-    font-weight:800 !important;
-  }
-
-
-  /* ================= FILE PORTAL ================= */
-
-  .navRight a,
-  .portalBtn{
-    grid-area:portal !important;
-
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-
-    width:auto !important;
-    min-width:104px !important;
-    height:42px !important;
-
-    padding:0 10px !important;
-    margin:0 !important;
-
-    font-size:11px !important;
-    font-weight:800 !important;
-
-    white-space:nowrap !important;
-  }
-
-
-  /* ================= REVIEW ================= */
-
-  .secondaryReviewStack{
-    display:none !important;
-  }
-
-  .reviewStack{
-    position:relative !important;
-    top:auto !important;
-    left:auto !important;
-    right:auto !important;
-
-    width:calc(100% - 28px) !important;
-    margin:12px auto 7px !important;
-  }
-
-  .reviewCard{
-    min-height:0 !important;
-    padding:13px 14px !important;
-  }
-
-  .reviewCard .stars{
-    font-size:16px !important;
-    margin-bottom:5px !important;
-  }
-
-  .reviewCard p{
-    font-size:12px !important;
-    line-height:1.35 !important;
-    margin:6px 0 !important;
-  }
-
-  .reviewCard b{
-    font-size:13px !important;
-  }
-
-  .reviewCard small{
-    font-size:9px !important;
-  }
-
-  .reviewDots{
-    margin:4px 0 !important;
-    transform:scale(.75) !important;
-  }
-
-
-  /* ================= SOCIAL AREA ================= */
-
-  .socialCorner{
-    position:relative !important;
-    top:auto !important;
-    right:auto !important;
-    left:auto !important;
-
-    width:100% !important;
-    max-width:none !important;
-
-    margin:0 !important;
-    padding:5px 12px 10px !important;
-
-    display:grid !important;
-    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
-    gap:6px !important;
-
-    overflow:visible !important;
-    background:#050505 !important;
-  }
-
-
-  /* ================= HABIBI TIKTOK ================= */
-
-  .habibiMainSocial{
-    grid-column:1 / -1 !important;
-
-    display:grid !important;
-    grid
+#lang {
+  height: 46px;
+  min-width: 72px;
+  padding: 0 12px;
+
+  background: #0c0c0c;
+  color: var(--gold);
+
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.portalBtn /* ==========================================
+   HABIBI PERFORMANCE
+   BLACK / GOLD PREMIUM DESIGN
+========================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050505;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+:root {
+  --gold: #f5b52e;
+  --gold2: #ffd86a;
+  --black: #050505;
+  --card: #0b0b0b;
+  --border: rgba(245, 181, 46, 0.42);
+  --muted: #a9a9a9;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header {
+  min-height: 92px;
+  padding: 16px 5%;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 18px;
+
+  background: #050505;
+  border-bottom: 1px solid rgba(245, 181, 46, 0.25);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brandMark {
+  color: var(--gold);
+  font-size: 38px;
+  line-height: 1;
+}
+
+.brand strong {
+  display: block;
+  color: var(--gold);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.brand small {
+  display: block;
+  margin-top: 8px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+#lang {
+  height: 46px;
+  min-width: 72px;
+  padding: 0 12px;
+
+  background: #0c0c0c;
+  color: var(--gold);
+
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.portalBtn {
+  padding: 14px 22px;
+  background: linear-gradient(135deg, var(--gold2), #d99516);
+  color: #111;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 900;
+  white-space: nowrap;
+}
