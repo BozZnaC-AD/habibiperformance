@@ -52,3 +52,15 @@ document.addEventListener("change", function(e){
     if(desktop) desktop.value = e.target.value;
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const langSelect = document.getElementById("lang");
+
+  if (langSelect) {
+    langSelect.value = "EN";
+  }
+
+  if (typeof setLang === "function") {
+    setLang("EN");
+  }
+});
