@@ -5,7 +5,7 @@
    Live tuning database
    ========================================================= */
 
-let cars = [];
+let cars = [EN];
 let lang = "EN";
 
 const $ = (id) => document.getElementById(id);
@@ -790,7 +790,7 @@ async function init() {
   }
 
 
-  renderPopular();
+  renderPopular(); setLang('EN')
 }
 
 
