@@ -64,3 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
     setLang("EN");
   }
 });
+
+window.addEventListener("DOMContentLoaded", function () {
+  const lang = document.getElementById("lang");
+
+  if (lang) {
+    lang.value = "EN";
+  }
+
+  if (typeof setLang === "function") {
+    setLang("EN");
+  }
+});
