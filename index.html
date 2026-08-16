@@ -1,190 +1,291 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Habibi Performance — Professional Demo</title>
-
-<meta
-  name="description"
-  content="Habibi Performance ECU tuning database, dyno results and worldwide file service."
->
-
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Habibi Performance — Professional ECU & TCU File Service</title>
+<meta name="description" content="Habibi Performance — professional worldwide ECU & TCU file service, tuning database, dyno results and custom calibration solutions.">
 <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
-
 <header>
+ <div class="brand"><span>◈</span><div>HABIBI<small>PERFORMANCE</small></div></div>
+ <nav>
+<a href="#home" data-i="navHome">HOME</a>
+<a href="#finder" data-i="navDatabase">ECU DATABASE</a>
+<a href="#dyno" data-i="navDyno">DYNO RESULTS</a>
+<a href="#services" data-i="navServices">SERVICES</a>
+<a href="#pricing" data-i="navPricing">PRICING</a>
+<a href="#workflow" data-i="navHow">HOW IT WORKS</a>
+<a href="#partners" data-i="navPartners">PARTNERS</a>
+<a href="#faq">FAQ</a>
+</nav>
+ <div class="navRight"><select id="lang" onchange="setLang(this.value)"><option>DE</option><option>BS</option><option selected>EN</option></select><a class="portal" href="https://portal.habibi-performance.com/login"><span data-i="filePortal">FILE PORTAL</span> →</a></div>
 
-  <div class="brand">
-    <span>◈</span>
-    <div>
-      HABIBI
-      <small>PERFORMANCE</small>
-    </div>
-  </div>
-
-  <nav>
-    <a href="#home" data-i="navHome">HOME</a>
-    <a href="#finder" data-i="navDatabase">ECU DATABASE</a>
-    <a href="#dyno" data-i="navDyno">DYNO RESULTS</a>
-    <a href="#services" data-i="navServices">SERVICES</a>
-    <a href="#faq">FAQ</a>
-  </nav>
-
-  <div class="navRight">
-
-    <!-- DESKTOP LANGUAGE -->
-    <select id="lang" onchange="setLang(this.value)">
-  <option value="EN" selected>EN</option>
-  <option value="DE">DE</option>
-  <option value="BS">BS</option>
-</select>
-
-    
-    <!-- MOBILE LANGUAGE -->
-    <select
-      id="mobileLang"
-      class="mobileLang"
-      onchange="setLang(this.value)"
-      aria-label="Mobile language"
-    >
-      <option value="EN">EN</option>
-      <option value="BS">BS</option>
-      <option value="DE">DE</option>
-    </select>
-
-    <a
-      class="portal"
-      href="https://portal.habibi-performance.com/login"
-    >
-      <span data-i="filePortal">FILE PORTAL</span> →
-    </a>
-
-  </div>
 
 </header>
 
-
 <section class="hero" id="home">
 
-  <div class="socialCorner">
 
-    <!-- HABIBI PERFORMANCE TIKTOK -->
-    <a
-      class="habibiMainSocial"
-      href="https://www.tiktok.com/@.habibi.performance"
-      target="_blank"
-      rel="noopener"
-    >
+<div class="socialCorner">
+<a class="habibiMainSocial" href="https://www.tiktok.com/@.habibi.performance" target="_blank" rel="noopener">
+  <div class="mainSocialTitle"><span>★</span><div><b>HABIBI PERFORMANCE</b><small data-i="officialTikTok">OFFICIAL TIKTOK</small></div></div>
+  <img src="/tiktok-qr-gold.png" alt="Habibi Performance TikTok QR">
+  <strong>@.habibi.performance</strong>
+  <em data-i="scanQr">CLICK OR SCAN QR →</em>
+</a>
 
-      <div class="mainSocialTitle">
-        <span>★</span>
+  
 
-        <div>
-          <b>HABIBI PERFORMANCE</b>
-          <small>OFFICIAL TIKTOK</small>
-        </div>
-      </div>
+  <a class="socialCard partnerLogoCard" href="https://www.instagram.com/fg_chiptuning_bugojno?igsh=MWN5cW5veWRhZHBmbQ==" target="_blank" rel="noopener">
+    <div class="socialHead"><b data-i="officialPartner">OFFIZIELLER PARTNER</b><span>FG Chiptuning Bugojno</span></div>
+    <img class="partnerLogo" src="/fg-chiptuning-logo.jpg" alt="FG Chiptuning">
+    <div class="partnerQrRow"><img src="/fg-instagram-qr.png" alt="Instagram QR"><span><strong>INSTAGRAM</strong><small data-i="clickScan">Klicken oder scannen</small></span></div>
+  </a>
 
-      <img
-        src="/tiktok-qr-gold.png"
-        alt="Habibi Performance TikTok QR"
-      >
+  <a class="socialCard partnerLogoCard" href="https://www.tiktok.com/@bsk_performance?_r=1&_t=ZN-98t18yaQ2uE" target="_blank" rel="noopener">
+    <div class="socialHead"><b data-i="officialPartner">OFFIZIELLER PARTNER</b><span>BSK Performance</span></div>
+    <img class="partnerLogo" src="/bsk-performance.jpg" alt="BSK Performance">
+    <div class="partnerQrRow"><img src="/bsk-tiktok-qr.png" alt="BSK Performance TikTok QR"><span><strong>TIKTOK</strong><small data-i="clickScan">Klicken oder scannen</small></span></div>
+  </a>
 
-      <strong>@.habibi.performance</strong>
+  <a class="socialCard partnerLogoCard" href="https://www.tiktok.com/@asmir0971?_r=1&_t=ZN-98swbBDckBq" target="_blank" rel="noopener">
+    <div class="socialHead"><b data-i="officialPartner">OFFIZIELLER PARTNER</b><span>@asmir0971</span></div>
+    <img class="partnerLogo" src="/asmir-partner.jpg" alt="@asmir0971">
+    <div class="partnerQrRow"><img src="/asmir-tiktok-qr.png" alt="TikTok QR"><span><strong>TIKTOK</strong><small data-i="clickScan">Klicken oder scannen</small></span></div>
+  </a>
+</div>
 
-      <em>KLICKEN ODER QR SCANNEN →</em>
-
-    </a>
-
-
-    <!-- FG CHIPTUNING -->
-    <a
-      class="socialCard partnerLogoCard"
-      href="https://www.instagram.com/fg_chiptuning_bugojno?igsh=MWN5cW5veWRhZHBmbQ=="
-      target="_blank"
-      rel="noopener"
-    >
-
-      <div class="socialHead">
-        <b data-i="officialPartner">OFFIZIELLER PARTNER</b>
-        <span>FG Chiptuning Bugojno</span>
-      </div>
-
-      <img
-        class="partnerLogo"
-        src="/fg-chiptuning-logo.jpg"
-        alt="FG Chiptuning"
-      >
-
-      <div class="partnerQrRow">
-
-        <img
-          src="/fg-instagram-qr.png"
-          alt="FG Chiptuning Instagram QR"
-        >
-
-        <span>
-          <strong>INSTAGRAM</strong>
-          <small data-i="clickScan">
-            Klicken oder scannen
-          </small>
-        </span>
-
-      </div>
-
-    </a>
-
-
-    <!-- BSK PERFORMANCE -->
-    <a
-      class="socialCard partnerLogoCard"
-      href="https://www.tiktok.com/@bsk_performance?_r=1&_t=ZN-98t18yaQ2uE"
-      target="_blank"
-      rel="noopener"
-    >
-
-      <div class="socialHead">
-        <b data-i="officialPartner">OFFIZIELLER PARTNER</b>
-        <span>BSK Performance</span>
-      </div>
-
-      <img
-        class="partnerLogo"
-        src="/bsk-performance.jpg"
-        alt="BSK Performance"
-      >
-
-      <div class="partnerQrRow">
-
-        <img
-          src="/bsk-tiktok-qr.png"
-          alt="BSK Performance TikTok QR"
-        >
-
-        <span>
-          <strong>TIKTOK</strong>
-          <small data-i="clickScan">
-            Klicken oder scannen
-          </small>
-        </span>
-
-      </div>
-
-    </a>
+<div class="heroImage"></div>
+ 
+<aside class="review reviewStack">
+  <div class="reviewCard active">
+    <div class="stars">★★★★★</div>
+    <p data-i="rev1">“Top service and a great result! My car feels new again. More power and faster response.”</p>
+    <b>Armin K.</b><small>Audi A6 3.0 TDI</small><em>✓ <span data-i="verifiedCustomer">VERIFIZIERTER KUNDE</span></em>
+  </div>
+  <div class="reviewCard">
+    <div class="stars">★★★★★</div>
+    <p data-i="rev2">“Professional, fast and honest. Stage 1 made an immediately noticeable difference.”</p>
+    <b>Denis H.</b><small>BMW 530d</small><em>✓ <span data-i="verifiedCustomer">VERIFIZIERTER KUNDE</span></em>
+  </div>
+  <div class="reviewCard">
+    <div class="stars">★★★★★</div>
+    <p data-i="rev3">“Great advice and fast processing. The car runs cleanly and noticeably stronger.”</p>
+    <b>Mirza P.</b><small>Mercedes C220 CDI</small><em>✓ <span data-i="verifiedCustomer">VERIFIZIERTER KUNDE</span></em>
+  </div>
+  <div class="reviewDots"><button class="on"></button><button></button><button></button></div>
+</aside>
+<aside class="review reviewStack secondaryReviewStack">
+  <div class="reviewCard active">
+    <div class="stars">★★★★★</div>
+    <p data-i="rev4">“Very professional and fast. The car pulls much better while still running cleanly.”</p>
+    <b>Marco R.</b><small>BMW 330d</small><em>✓ <span data-i="verifiedCustomer">VERIFIZIERTER KUNDE</span></em>
+  </div>
+  <div class="reviewCard">
+    <div class="stars">★★★★★</div>
+    <p data-i="rev5">“Great communication and a very smooth result. More torque was immediately noticeable.”</p>
+    <b>Daniel M.</b><small>Audi A4 2.0 TDI</small><em>✓ <span data-i="verifiedCustomer">VERIFIZIERTER KUNDE</span></em>
+  </div>
+  <div class="reviewCard">
+    <div class="stars">★★★★★</div>
+    <p data-i="rev6">“Fast, serious service. The car responds much better after the modification.”</p>
+    <b>Julien P.</b><small>Mercedes C220d</small><em>✓ <span data-i="verifiedCustomer">VERIFIZIERTER KUNDE</span></em>
+  </div>
+  <div class="reviewDots"><button class="on"></button><button></button><button></button></div>
+</aside>
 
 
-    <!-- ASMIR -->
-    <a
-      class="socialCard partnerLogoCard"
-      href="https://www.tiktok.com/@asmir0971?_r=1&_t=ZN-98swbBDckBq"
-      target="_blank"
-      rel="noopener"
-    >
+ 
+</section>
 
-      <div class="socialHead">
-        <b data-i="officialPartner">OFFIZIELLER PARTNER</b>
-        <span>@asmir
+
+<section class="finderSection" id="finder">
+ <div class="headline"><h1 data-i="headline">WIE VIEL <span data-i="powerLabel">LEISTUNG</span> STECKT IN DEINEM AUTO?</h1><p data-i="sub">Wähle dein Fahrzeug und sieh Serienleistung, Stage 1 und Stage 2 Potenzial.</p></div>
+ <div class="finder">
+  <div><label data-i="make">HERSTELLER</label><select id="make"></select></div>
+  <div><label data-i="model">MODELL</label><select id="model" disabled></select></div>
+  <div><label data-i="gen">GENERATION</label><select id="gen" disabled></select></div>
+  <div><label data-i="engine">MOTOR / LEISTUNG</label><select id="engine" disabled></select></div>
+  <button onclick="selectCurrent()">⌕ <span data-i="search">FAHRZEUG FINDEN</span></button>
+ </div>
+ <div class="quick"><input id="quickSearch" data-ph="quick" placeholder="z. B. A6 3.0 272, G30 530d, Golf GTI..."><div id="suggestions"></div></div>
+ <div id="result"></div>
+</section>
+
+<section class="trust">
+ <div>🛡<b data-i="safe">100% SICHER & ZUVERLÄSSIG</b><small data-i="safeSub">Deine Daten sind bei uns sicher.</small></div>
+ <div>◷<b data-i="fast">SCHNELLE LIEFERUNG</b><small data-i="fastSub">Schnelle Bearbeitung & Lieferung.</small></div>
+ <div>✪<b data-i="quality">PROFESSIONELLE QUALITÄT</b><small data-i="qualitySub">Geprüfte Tuning-Files.</small></div>
+ <div>◎<b data-i="worldService">WORLDWIDE SERVICE</b><small data-i="world">Kunden weltweit.</small></div>
+</section>
+
+<section class="facts">
+ <div><b id="brandsCount">79+</b><small data-i="brands">MARKEN</small></div>
+ <div><b id="carsCount">6,742+</b><small data-i="cars">PKW / MOTOREN</small></div>
+ <div><b>STAGE 1/2</b><small data-i="performanceData">PERFORMANCE DATA</small></div>
+ <div><b>24/7</b><small data-i="filePortal">FILE PORTAL</small></div>
+</section>
+
+
+<section class="section proWorkflow" id="workflow">
+ <div class="sectionTitle"><div><small data-i="worldwideFileService">WORLDWIDE FILE SERVICE</small><h2 data-i="howTitle">HOW IT <span>WORKS</span></h2><p data-i="howSub">From original file to tuned file in four simple steps.</p></div></div>
+ <div class="workflowGrid">
+  <article><b>01</b><i>⇧</i><h3 data-i="how1">UPLOAD ORIGINAL FILE</h3><p data-i="how1p">Upload your original ECU or TCU file through the portal.</p></article>
+  <article><b>02</b><i>☷</i><h3 data-i="how2">SELECT SERVICE</h3><p data-i="how2p">Choose the tuning or file solution required for the vehicle.</p></article>
+  <article><b>03</b><i>⚙</i><h3 data-i="how3">WE PROCESS</h3><p data-i="how3p">Your file is prepared for the selected vehicle and service.</p></article>
+  <article><b>04</b><i>⇩</i><h3 data-i="how4">DOWNLOAD FILE</h3><p data-i="how4p">Download the completed file directly from the File Portal.</p></article>
+ </div>
+</section>
+
+<section class="section ecuSupport" id="ecu-support">
+ <div class="sectionTitle"><div><small>ECU / TCU</small><h2 data-i="supportTitle">SUPPORTED <span>PLATFORMS</span></h2><p data-i="supportSub">Professional file solutions for widely used engine and transmission control units.</p></div></div>
+ <div class="supportPanel">
+  <div class="supportBrands"><strong>BOSCH</strong><strong>CONTINENTAL</strong><strong>DELPHI</strong><strong>DENSO</strong><strong>MARELLI</strong><strong>SIEMENS VDO</strong></div>
+  <div class="supportFamilies"><span>EDC17</span><span>MD1</span><span>MG1</span><span>MED17</span><span>SID</span><span>PCR2.1</span><span>SIMOS</span><span>DCM</span><span>TCU</span></div>
+  <a class="goldAction" href="#finder" data-i="browseVehicles">BROWSE VEHICLES →</a>
+ </div>
+</section>
+
+<section class="section partnerProgram" id="partners">
+ <div class="partnerProgramBox">
+  <div><small>HABIBI PERFORMANCE NETWORK</small><h2 data-i="partnerTitle">BECOME A <span>PARTNER</span></h2><p data-i="partnerSub">Are you a workshop or tuner? Join our network and use our worldwide file service for your customers.</p></div>
+  <a class="goldAction" href="https://portal.habibi-performance.com/login" data-i="partnerCta">OPEN FILE PORTAL →</a>
+ </div>
+</section>
+
+<section class="section dyno" id="dyno">
+ <div class="sectionTitle"><div><small data-i="dynoPerformance">DYNO PERFORMANCE</small><h2 data-i="dynoTitle">ECHTE PARAMETER. <span>KLARE LEISTUNG.</span></h2><p data-i="dynoSub">Professionelle Darstellung ohne Auto-Icons – nur die Werte, die zählen.</p></div></div>
+ <div class="dynoPanel">
+  <div class="dynoData">
+   <div class="vehicleName">AUDI A6 C7 3.0 TDI</div>
+   <div class="dynoTable">
+    <div></div><b data-i="stockLabel">SERIE</b><b>STAGE 1</b><b>STAGE 2</b>
+    <strong data-i="powerLabel">LEISTUNG</strong><span>272 PS</span><span class="hot">340 PS</span><span class="hot">370 PS</span>
+    <strong data-i="torqueLabel">DREHMOMENT</strong><span>580 Nm</span><span class="hot">680 Nm</span><span class="hot">750 Nm</span>
+    <strong data-i="gainLabel">ZUWACHS</strong><span>—</span><span class="gain">+68 PS</span><span class="gain">+98 PS</span>
+   </div>
+   <div class="dynoKpis"><div><small>STAGE 1</small><b>+25%</b></div><div><small>STAGE 2</small><b>+36%</b></div><div><small>MAX NM</small><b>750</b></div></div>
+  </div>
+  <div class="chartWrap">
+   <svg viewBox="0 0 700 360" class="chart" role="img" aria-label="Dyno chart">
+    <g class="gridlines">
+     <line x1="60" y1="40" x2="60" y2="300"/><line x1="60" y1="300" x2="660" y2="300"/>
+     <line x1="60" y1="235" x2="660" y2="235"/><line x1="60" y1="170" x2="660" y2="170"/><line x1="60" y1="105" x2="660" y2="105"/><line x1="60" y1="40" x2="660" y2="40"/>
+     <line x1="180" y1="40" x2="180" y2="300"/><line x1="300" y1="40" x2="300" y2="300"/><line x1="420" y1="40" x2="420" y2="300"/><line x1="540" y1="40" x2="540" y2="300"/><line x1="660" y1="40" x2="660" y2="300"/>
+    </g>
+    <path class="serie" d="M60,270 C160,235 220,190 300,160 S480,105 650,145"/>
+    <path class="stage1" d="M60,250 C150,205 225,150 315,115 S500,70 650,105"/>
+    <path class="stage2" d="M60,235 C150,185 225,125 320,90 S510,50 650,78"/>
+    <path class="torque1" d="M60,280 C150,255 240,210 330,205 S520,225 650,255"/>
+    <path class="torque2" d="M60,260 C150,225 240,170 330,165 S520,185 650,220"/>
+    <text x="330" y="342" data-i="rpmLabel">ENGINE SPEED (RPM)</text>
+    <text x="10" y="45">PS</text><text x="665" y="45">Nm</text>
+   </svg>
+   <div class="legend"><span class="l1" data-i="legendStock">STOCK PS</span><span class="l2">STAGE 1 PS</span><span class="l3">STAGE 2 PS</span><span class="l4" data-i="torqueLabel">DREHMOMENT</span></div>
+  </div>
+ </div>
+</section>
+
+
+<section class="section pricingSection" id="pricing">
+ <div class="sectionTitle"><div><small data-i="pricingEyebrow">CREDIT PRICING</small><h2 data-i="pricingTitle">FILE SERVICE <span>PRICING</span></h2><p data-i="pricingSub">Transparent credit-based pricing for ECU and TCU file services.</p></div></div>
+ <div class="creditHero">
+  <div><small data-i="creditRateLabel">STANDARD CREDIT RATE</small><strong>1 CREDIT = €6</strong><p data-i="creditRateSub">Larger credit packages and promotions can reduce the effective price per credit.</p></div>
+  <a class="goldAction" href="https://portal.habibi-performance.com/login" data-i="buyCredits">BUY CREDITS →</a>
+ </div>
+ <div class="pricingGrid">
+  <article class="priceGroup">
+   <h3 data-i="tuningGroup">ECU / TCU TUNING</h3>
+   <div class="priceRow"><span>Stage 1 ECU Remap</span><b>7 CR</b><em>€28–€42</em></div>
+   <div class="priceRow"><span>Stage 2 ECU Remap</span><b>10 CR</b><em>€40–€60</em></div>
+   <div class="priceRow"><span>TCU Stage 1</span><b>8 CR</b><em>€32–€48</em></div>
+   <div class="priceRow"><span>TCU Stage 2</span><b>12 CR</b><em>€48–€72</em></div>
+   <div class="priceRow"><span>DSG Farts</span><b>4 CR</b><em>€16–€24</em></div>
+   <div class="priceRow"><span>E85 / Flex Fuel</span><b>10 CR</b><em>€40–€60</em></div>
+   <div class="priceRow"><span>Supercar ECU</span><b>15 CR</b><em>€60–€90</em></div>
+   <div class="priceRow"><span>Supercar TCU</span><b>15 CR</b><em>€60–€90</em></div>
+  </article>
+  <article class="priceGroup">
+   <h3 data-i="deleteGroup">SYSTEM SOLUTIONS</h3>
+   <div class="priceRow"><span>EGR Off</span><b>2 CR</b><em>€8–€12</em></div>
+   <div class="priceRow"><span>DPF / FAP Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>OPF / GPF Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>AdBlue / SCR Off</span><b>4 CR</b><em>€16–€24</em></div>
+   <div class="priceRow"><span>NOX Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>DTC Off</span><b>2 CR</b><em>€8–€12</em></div>
+   <div class="priceRow"><span>Decat / Cat Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>Start &amp; Stop Off</span><b>3 CR</b><em>€12–€18</em></div>
+  </article>
+  <article class="priceGroup">
+   <h3 data-i="specialGroup">SPECIAL FUNCTIONS</h3>
+   <div class="priceRow"><span>Swirl Flaps</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>Exhaust Flaps</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>BMW Sport Display</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>TVA</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>Hot Start</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>Cold Start Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>MAF Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>Cylinder On Demand Off</span><b>3 CR</b><em>€12–€18</em></div>
+   <div class="priceRow"><span>Oil Pressure Fix</span><b>4 CR</b><em>€16–€24</em></div>
+  </article>
+  <article class="priceGroup">
+   <h3 data-i="performanceGroup">PERFORMANCE EXTRAS</h3>
+   <div class="priceRow"><span>Pops &amp; Bangs (Petrol)</span><b>4 CR</b><em>€16–€24</em></div>
+   <div class="priceRow"><span>Popcorn / Hardcut (Diesel)</span><b>4 CR</b><em>€16–€24</em></div>
+   <div class="priceRow"><span>Immo Off</span><b>5 CR</b><em>€20–€30</em></div>
+   <div class="priceRow"><span>Launch Control</span><b>6 CR</b><em>€24–€36</em></div>
+   <div class="priceRow"><span>Hard Rev-Cut</span><b>4 CR</b><em>€16–€24</em></div>
+   <div class="priceRow"><span>Vmax Off</span><b>2 CR</b><em>€8–€12</em></div>
+  </article>
+ </div>
+ <p class="pricingNote" data-i="pricingNote">Credit values are fixed; euro ranges reflect an effective credit cost of €4–€6 depending on package or promotion. Some services are vehicle-dependent. Emissions-related solutions are intended only where legally permitted, including motorsport/off-road use where applicable.</p>
+</section>
+
+<section class="section" id="services">
+ <div class="sectionTitle"><div><small>HABIBI PERFORMANCE</small><h2 data-i="servicesTitle">UNSERE <span>LEISTUNGEN</span></h2></div></div>
+ <div class="services">
+  <article><b>01</b><h3>STAGE 1 / 2 / 3</h3><p data-i="s1">Performance-Kalibrierungen für unterstützte Fahrzeuge.</p></article>
+  <article><b>02</b><h3>ECU / TCU</h3><p data-i="s2">Professionelle Motor- und Getriebe-Dateilösungen.</p></article>
+  <article><b>03</b><h3>CUSTOM SOLUTIONS</h3><p data-i="s3">Individuelle Lösungen passend zum Fahrzeug.</p></article>
+  <article><b>04</b><h3>WORLDWIDE FILES</h3><p data-i="s4">Upload und Download über das File Portal.</p></article>
+ </div>
+</section>
+
+<section class="section" id="popular"><div class="sectionTitle"><div><small data-i="databaseLabel">DATABASE</small><h2 data-i="popular">BELIEBTE <span>FAHRZEUGE</span></h2></div></div><div id="popularGrid" class="popularGrid"></div></section>
+
+
+<section class="section customerResults" id="results">
+ <div class="sectionTitle">
+  <div><small data-i="resultsLabel">HABIBI PERFORMANCE RESULTS</small><h2 data-i="resultsTitle">CUSTOMER <span>RESULTS</span></h2>
+  <p data-i="resultsSub">Selected performance examples. Actual output depends on vehicle condition and setup.</p></div>
+ </div>
+ <div class="resultCards">
+  <article><div class="rTop"><span>AUDI</span><b>A6 C7 3.0 TDI</b><small>Stage 1</small></div>
+    <div class="rPower"><div><small data-i="stockLabel">SERIE</small><b>272 PS</b><em>580 Nm</em></div><i>→</i><div class="after"><small>STAGE 1</small><b>340 PS</b><em>680 Nm</em></div></div>
+    <p>★★★★★ <strong data-i="result1">More power and noticeably better throttle response.</strong></p>
+  </article>
+  <article><div class="rTop"><span>BMW</span><b>530d G30</b><small>Stage 1</small></div>
+    <div class="rPower"><div><small data-i="stockLabel">SERIE</small><b>265 PS</b><em>620 Nm</em></div><i>→</i><div class="after"><small>STAGE 1</small><b>320 PS</b><em>700 Nm</em></div></div>
+    <p>★★★★★ <strong data-i="result2">Smooth power delivery and noticeably more torque.</strong></p>
+  </article>
+  <article><div class="rTop"><span>VW</span><b>Golf 7 GTI</b><small>Stage 1</small></div>
+    <div class="rPower"><div><small data-i="stockLabel">SERIE</small><b>230 PS</b><em>350 Nm</em></div><i>→</i><div class="after"><small>STAGE 1</small><b>300 PS</b><em>450 Nm</em></div></div>
+    <p>★★★★★ <strong data-i="result3">Sharper, stronger and still suitable for everyday driving.</strong></p>
+  </article>
+ </div>
+</section>
+
+<section class="section faq" id="faq"><div class="sectionTitle"><div><small>FAQ</small><h2 data-i="faqTitle">HÄUFIGE <span>FRAGEN</span></h2></div></div>
+ <details><summary data-i="q1">Ist die angezeigte Leistung garantiert?</summary><p data-i="a1">Nein. Werte sind Richtwerte. Das genaue Ergebnis hängt von ECU, Kraftstoff, Hardware und Zustand ab.</p></details>
+ <details><summary data-i="q2">Muss ich zu euch kommen?</summary><p data-i="a2">Nein. Der File Service ist weltweit über das Portal verfügbar.</p></details>
+ <details><summary data-i="q3">Wie bestelle ich eine Datei?</summary><p data-i="a3">Fahrzeug auswählen und im File Portal fortfahren.</p></details>
+</section>
+
+<section class="cta"><div><small>HABIBI PERFORMANCE</small><h2 data-i="ready">BEREIT FÜR MEHR LEISTUNG?</h2><p data-i="readySub">Datei hochladen, Credits kaufen und fertige Datei über das Portal herunterladen.</p></div><a href="https://portal.habibi-performance.com/login" data-i="partnerCta">OPEN FILE PORTAL →</a></section>
+<footer data-i="footerText">© 2026 HABIBI PERFORMANCE • ECU TUNING • WORLDWIDE SERVICE</footer>
+<script src="/app.js"></script>
+
+<a class="waFloat" href="https://wa.me/38762526835" target="_blank" rel="noopener" aria-label="WhatsApp"><span>●</span><b>WhatsApp</b></a>
+
+</body></html>
