@@ -15,7 +15,7 @@ function verify(p,v){let [s,k]=v.split(":");return crypto.timingSafeEqual(Buffer
 function me(req){let t=req.headers.cookie?.match(/hp_session=([^;]+)/)?.[1],d=read();return t&&d.sessions[t]?d.users.find(u=>u.id===d.sessions[t].userId):null}
 function auth(req,res,next){let u=me(req);if(!u)return res.status(401).json({error:"Login required"});req.user=u;next()}
 function login(res,uid){let d=read(),t=crypto.randomBytes(32).toString("hex");d.sessions[t]={userId:uid};write(d);res.setHeader("Set-Cookie",`hp_session=${t}; HttpOnly; Path=/; SameSite=Lax; Max-Age=604800`)}
-app.use(express.json());app.use(express.urlencoded({extended:true}));app.use(express.static(ROOT)));
+app.use(express.json());app.use(express.urlencoded({extended:true}));app.use(express.static(path.join(ROOT,"public")));
 app.get("/api/me",(req,res)=>{let u=me(req);if(!u)return res.json({user:null});let x={...u};delete x.password;res.json({user:x})});
 app.post("/api/register",(req,res)=>{let {name,email,password}=req.body;if(!name||!email||!password||password.length<8)return res.status(400).json({error:"Fill all fields; password needs 8+ characters"});let d=read(),e=email.toLowerCase();if(d.users.some(u=>u.email===e))return res.status(409).json({error:"Email already registered"});let u={id:id("USR"),name,email:e,password:hash(password),credits:0,admin:false,createdAt:new Date().toISOString()};d.users.push(u);write(d);login(res,u.id);res.json({ok:true})});
 app.post("/api/login",(req,res)=>{let d=read(),u=d.users.find(x=>x.email===String(req.body.email||"").toLowerCase());if(!u||!verify(req.body.password||"",u.password))return res.status(401).json({error:"Invalid login"});login(res,u.id);res.json({ok:true})});
@@ -41,5 +41,5 @@ app.get("/api/orders",auth,(req,res)=>res.json(read().orders.filter(o=>o.userId=
 const upload=multer({dest:UP,limits:{fileSize:50*1024*1024}});
 app.post("/api/orders",auth,upload.single("original"),(req,res)=>{let d=read(),v=d.vehicles.find(x=>String(x.id)===String(req.body.vehicleId)),u=d.users.find(x=>x.id===req.user.id),cost=+req.body.cost||25;if(!v)return res.status(400).json({error:"Vehicle not found"});if(u.credits<cost)return res.status(400).json({error:"Not enough credits"});u.credits-=cost;let o={id:id("HP"),userId:u.id,vehicle:`${v.brand} ${v.model}`,engine:v.engine,ecu:v.ecu,service:req.body.service||"Stage 1",cost,status:"PROCESSING",original:req.file?.filename||null,processed:null,createdAt:new Date().toISOString()};d.orders.push(o);write(d);res.json({ok:true,order:o})});
 app.get("/api/download/:id",auth,(req,res)=>{let o=read().orders.find(x=>x.id===req.params.id);if(!o||o.userId!==req.user.id||!o.processed)return res.status(404).send("File unavailable");res.download(path.join(UP,o.processed),`${o.id}-Habibi-Performance.bin`)});
-app.get("*",(req,res)=>res.sendFile(path.join(ROOT,"index.html")));
+app.get("*",(req,res)=>res.sendFile(path.join(ROOT,"public/index.html")));
 app.listen(PORT,()=>console.log("Habibi Performance: http://localhost:"+PORT));
